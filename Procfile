@@ -1,1 +1,1 @@
-web: exploreestepona.wsgi
+web: gunicorn exploreestepona.wsgi
