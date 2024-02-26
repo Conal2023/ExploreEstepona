@@ -17,7 +17,7 @@ class Post(models.Model):
     updated_on = models.DateTimeField(auto_now=True)
 
 
-class Comment(model.Model):
+class Comment(models.Model):
     post = models.ForeginKey(
         Post, on_delete=models.CASCADE, related_name="comments")
     auther = models.ForeginKey(
