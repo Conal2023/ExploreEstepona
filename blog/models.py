@@ -18,7 +18,7 @@ class Post(models.Model):
 
 
 class Comment(models.Model):
-    post = models.ForeginKey(
+    post = models.ForeignKey(
         Post, on_delete=models.CASCADE, related_name="comments")
     auther = models.ForeginKey(
         User, on_delete=models.CASCADE, related_name="commenter")
