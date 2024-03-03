@@ -47,3 +47,7 @@ footer {
 .fa-brands {
     color: rgb(61, 57, 57);
 }
+.card {
+    border: none;
+    background-color: rgb(252, 252, 252);
+}
