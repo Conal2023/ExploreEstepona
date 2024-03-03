@@ -20,19 +20,30 @@ body {
 
 .navbar  {
     position: absolute;
-    background-color: rgb(125, 201, 231);
+    background-color: rgb(252, 252, 252);
     width: 100%;
     font-size: 1.5em;
     padding-left: 6em;
     padding-right: 6em;
 }
 
-.row {
+.nav-item {
+    color: aliceblue;
+}
 
+.row {
 padding-left: 3em;
 padding-right: 3em;
 }
 
 .card-body {
    text-align: center; 
+}
+
+footer {
+    background-color: rgb(252, 252, 252);
+    font-size: 1.5em;
+}
+.fa-brands {
+    color: rgb(61, 57, 57);
 }
