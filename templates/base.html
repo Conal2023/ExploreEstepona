@@ -1,3 +1,5 @@
+{% load static %}
+
 {% url 'home' as home_url %}
 
 <!DOCTYPE html>
@@ -20,13 +22,15 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     
 </head>
 
 <body class="d-flex flex-column h-100 main-bg">
     <header>
         <!--Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light custom-bg-primary">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="{% url 'home' %}"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
@@ -40,7 +44,7 @@
                                 <a class="nav-link" href="#">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Feedback</a>
+                                <a class="nav-link" href="#">Contact Us</a>
                             </li>
                         </ul>
                                 
@@ -56,7 +60,7 @@
                 </div>
         </nav>
         <div class="container text-center">
-            <h1 class="title">Explore Estapona</h1>
+            <h1 class="title">Explore Estepona</h1>
         </div>
     </header>
 

@@ -1,0 +1,38 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: rgb(5, 4, 4);
+    background-image: url('/static/img/esteponaport.jpg');
+    font-weight: 750;
+}
+
+.title {
+    font-family: 'lato', sans-serif;
+    font-weight: 650;
+    font-size: 7em;
+    text-transform: uppercase;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    color: white;
+    text-shadow: 2px 2px 2px rgb(134, 134, 134);
+    padding-top: 30px;
+}
+
+.navbar  {
+    position: absolute;
+    background-color: rgb(125, 201, 231);
+    width: 100%;
+    font-size: 1.5em;
+    padding-left: 6em;
+    padding-right: 6em;
+}
+
+.row {
+
+padding-left: 3em;
+padding-right: 3em;
+}
+
+.card-body {
+   text-align: center; 
+}
