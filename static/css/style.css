@@ -57,3 +57,9 @@ footer {
     color: white;
     text-shadow: 2px 2px 2px black;
 }
+
+.page-link {
+    color: black;
+    text-shadow: none;
+    border-radius: 35px;
+}
