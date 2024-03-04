@@ -30,41 +30,43 @@
 <body class="d-flex flex-column h-100 main-bg">
     <header>
         <!--Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light custom-bg-primary">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="{% url 'home' %}"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-                        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+        <nav class="navbar navbar-expand-lg navbar-dark p-6" id="headerNav">
+            <div class="container-fluid">
+                <a class="navbar-brand d-block d-lg-none" href="#">
+                    <img src="/static/img/Logo.JPG" height="80" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded ="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                    
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav me-auto mb-2 mb-1g-0">
-                            <li class="nav-item">
-                                <a class="nav-link
-                                    {% if request.path == home_url %}active{%endif%}"
-                                    aria-current="page" href="{% url 'home' %}">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contact Us</a>
-                            </li>
-                        </ul>
-                                
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Sign Up</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Login</a>
-                            </li>
-                        </ul>
-                    </div>
+                <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link mx-2 active 
+                            {% if request.path == home_url%}active{%endif%}"
+                            aria-current="page" href="{% url 'home' %}">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-2" href="#">Contact Us</a>
+                        </li>
+                        <li class="nav-item d-none d-lg-block">
+                            <a class="nav-link mx-2" href="{% url 'home' %}">
+                                <img src="/static/img/Logo.JPG" height="80" />
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-2" href="#">Register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-2" href="#">Log In</a>
+                        </li>
+                    </ul>
                 </div>
+            </div>
         </nav>
-        <div class="container text-center">
-            <h1 class="title">Explore Estepona</h1>
-        </div>
+
+       
     </header>
 
     <main class="flex-shrink-0 main-bg">
