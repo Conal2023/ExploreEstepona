@@ -2,7 +2,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     color: rgb(241, 240, 240);
-    text-shadow: 2px 2px 2px black;
+    text-shadow: 4px 4px 4px black;
     background-image: url('/static/img/esteponaport.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -34,6 +34,7 @@ footer {
 .card {
     border: none;
     background-color: rgba(24, 154, 241, 0.315);
+    border-radius: 35px;
 }
 
 .card-title {
@@ -63,3 +64,4 @@ footer {
     text-shadow: none;
     border-radius: 35px;
 }
+
