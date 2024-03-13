@@ -31,7 +31,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '8000-conal2023-exploreestepo-z7oxqfaj24w.ws-eu108.gitpod.io',
+    '8000-conal2023-exploreestepo-z7oxqfaj24w.ws-eu110.gitpod.io',
     '.herokuapp.com'
 ]
 
