@@ -11,9 +11,11 @@ body {
 }
 
 .navbar-nav .nav-link {
-    font-size: 2em;
+    font-size: 3em;
     padding-top: 1em;
+    text-shadow: none;
 }
+
 .row {
     padding-left: 3em;
     padding-right: 3em;
@@ -33,12 +35,13 @@ footer {
 }
 .card {
     border: none;
-    background-color: rgba(24, 154, 241, 0.315);
+    background-color: rgba(15, 115, 182, 0.555);
     border-radius: 35px;
 }
 
 .card-title {
     color: white;
+    text-shadow: 4px 4px 4px black;
 }
 
 .post-title {
