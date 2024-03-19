@@ -1,83 +1,152 @@
+{% load static %}
+
+{% url 'home' as home_url %}
+{% url 'account_login' as login_url %}
+{% url 'account_signup' as signup_url %}
+{% url 'account_logout' as logout_url %}
+
 <!DOCTYPE html>
-<html lang="en">
+<html class="h-100" lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Explore Estepona</title>
+
+    <!-- Google Fonts CSS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/574d71db8c.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    
 </head>
 
-<body>
-    <div style="margin:80px">
-        <h1 align="center">Contact Us</h1>
-        <hr>
-        <h4>Contact us directly if you have any queries. We will get in touch with you shortly.</h4>
-        <hr>
-        <br>
-        <form method="post">
-            {% csrf_token %}
-            <table>
-                <tr>
-                    <th>
-                        <label for="name">Name:</label>
-                    </th>
-                    <td>
-                        <input type="text" id="name" name="name" required>
-                    </td>
-                </tr>
-                <tr>
-                    <th>
-                        <label for="email">E-mail:</label>
-                    </th>
-                    <td>
-                        <input type="email" id="email" name="email" required>
-                    </td>
-                </tr>
-                <tr>
-                    <th>
-                        <label for="phone">Phone:</label>
-                    </th>
-                    <td>
-                        <input type="tel" id="phone" name="phone">
-                    </td>
-                </tr>
-                <tr>
-                    <th>
-                        Contact me by:
-                    </th>
-                    <td>
-                        <label for="email">E-Mail</label>
-                        <input type="radio" id="email" name=contact value="email">
+<body class="d-flex flex-column h-100 main-bg">
+    <header>
+        <!--Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark p-6" id="headerNav">
+            <div class="container-fluid">
+                <a class="navbar-brand d-block d-lg-none" href="#">
+                    <img src="/static/img/Logo.JPG" height="80" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded ="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                        <label for="phone">Phone</label>
-                        <input type="radio" id="phone" name=contact value="phone">
-                    </td>
-                </tr>
-                <tr>
-                    <th>
-                        <label for="queries">How can we help you?:</label>
-                    </th>
-                    <td>
-                        <select name="queries" id="queries">
-                            <option value="post_a_blog">Post A Blog</option>
-                            <option value="issue_with_profile">Issue With Profile</option>
-                            <option value="recommendations">Recommendations</option>
-                            <option value="other">Others</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <th>
-                        <label for="message">Message:</label>
-                    </th>
-                    <td>
-                        <textarea id="message" name="message" rows=10 cols=40 maxlength=3000 required></textarea>
-                    </td>
-                </tr>
-            </table>
-            <button type="submit">Submit</button>
-        </form>
+                <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link mx-2 active 
+                            {% if request.path == home_url%}active{%endif%}"
+                            aria-current="page" href="{% url 'home' %}">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-2" href="{% url 'contact' %}">Contact Us</a>
+                        </li>
+                        <li class="nav-item d-none d-lg-block">
+                            <a class="nav-link mx-2" href="{% url 'home' %}">
+                                <img src="/static/img/Logo.jpg" height="80" />
+                            </a>
+                        </li>
+                        {% if user.is_authenticated %}
+                        <li class="nav-item">
+                            <a class="nav-link {% if request.path == logout_url %}active{% endif %}" aria-current="page" href="{% url 'account_logout' %}">Logout</a>
+                        </li>
+                        {% else %}
+                        <li class="nav-item">
+                            <a class="nav-link {% if request.path == signup_url %}active{% endif %}" aria-current="page"
+                                href="{% url 'account_signup' %}">Register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if request.path == login_url %}active{% endif %}" aria-current="page" href="{% url 'account_login' %}">Login</a>
+                        </li>
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+       
+    </header>
+        <div style="margin:80px">
+            <h1 align="center">Contact Us</h1>
+            <hr>
+            <h4>Contact us directly if you have any queries. We will get in touch with you shortly.</h4>
+            <hr>
+            <br>
+            <form method="post">
+                {% csrf_token %}
+                <table>
+                    <tr>
+                        <th>
+                            <label for="name">Name:</label>
+                        </th>
+                        <td>
+                            <input type="text" id="name" name="name" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="email">E-mail:</label>
+                        </th>
+                        <td>
+                            <input type="email" id="email" name="email" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="phone">Phone:</label>
+                        </th>
+                        <td>
+                            <input type="tel" id="phone" name="phone">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Contact me by:
+                        </th>
+                        <td>
+                            <label for="email">E-Mail</label>
+                            <input type="radio" id="email" name=contact value="email">
+
+                            <label for="phone">Phone</label>
+                            <input type="radio" id="phone" name=contact value="phone">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="queries">How can we help you?:</label>
+                        </th>
+                        <td>
+                            <select name="queries" id="queries">
+                                <option value="post_a_blog">Post A Blog</option>
+                                <option value="issue_with_profile">Issue With Profile</option>
+                                <option value="recommendations">Recommendations</option>
+                                <option value="other">Others</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="message">Message:</label>
+                        </th>
+                        <td>
+                            <textarea id="message" name="message" rows=10 cols=40 maxlength=3000 required></textarea>
+                        </td>
+                    </tr>
+                </table>
+                <button type="submit">Submit</button>
+            </form>
 </body>
 
 </html>
