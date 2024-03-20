@@ -29,6 +29,7 @@ footer {
     font-size: 2em;
     color: white;
     text-shadow: 2px 2px 2px black;
+    
 }
 .fa-brands {
     color: white
@@ -45,6 +46,9 @@ footer {
     text-shadow: 2px 2px 2px black;
 }
 
+.post-link {
+    text-decoration: none;
+}
 .post-title {
     color: white;
     font-size: 4em;
