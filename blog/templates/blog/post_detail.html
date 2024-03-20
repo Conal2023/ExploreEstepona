@@ -73,9 +73,9 @@
           </p>
           {% endif %}
           {% if user.is_authenticated and comment.author == user %}
-          <button class="btn btn-delete"
+          <button class="btn btn-delete custom-btn"
           comment_id="{{ comment.id }}">Delete</button>
-          <button class="btn btn-edit"
+          <button class="btn btn-edit custom-btn"
             comment_id="{{ comment.id }}">Edit</button>
           {% endif %}
         </div>

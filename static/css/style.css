@@ -101,3 +101,14 @@ footer {
 .link {
     color: white;
 }
+
+.card-img-top {
+    max-width: 35em;
+    max-height: 45em;
+}
+
+.modal-content {
+    color: black;
+    font-size: 2em;
+    text-shadow: none;
+}
