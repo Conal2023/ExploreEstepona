@@ -68,3 +68,22 @@ footer {
     border-radius: 35px;
 }
 
+.container {
+    background-color: rgba(15, 115, 182, 0.555);
+    border-radius: 3em;
+    font-size: 1.5em;
+    text-shadow: 2px 2px 2px black;
+}
+
+.custom-btn {
+    background-color: rgb(15, 115, 182);
+    border-color: rgb(15, 115, 182);
+    color: white;
+    font-size: 20px;
+    border-radius: 35px;
+}
+
+.custom-btn:hover {
+    background-color: #4a90e2;
+    border-color: #4a90e2;
+}
