@@ -12,7 +12,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explore Estepona</title>
-
+    
     <!-- Google Fonts CSS -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
@@ -37,6 +37,8 @@
             <div class="container-fluid">
                 <a class="navbar-brand d-block d-lg-none" href="#">
                     <img src="/static/img/Logo.JPG" height="80" />
+                    <span class="sr-only"><h1>Explore Estepona</h1></span>
+                    
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                     aria-controls="navbarNavDropdown" aria-expanded ="false" aria-label="Toggle navigation">
@@ -80,9 +82,9 @@
             <div class="row justify-content-center">
                 <div class="col-md-8">
                     <div style="margin: 80px">
-                        <h1 class="text-center">Contact US</h1>
+                        <h2 class="text-center">Contact US</h2>
                         <hr>
-                        <h4>Contact us directly if you have any queries. We will get in touch with you shorthly.</h4>
+                        <h3>Contact us directly if you have any queries. We will get in touch with you shorthly.</h3>
                         <hr>
                         <form method="post">
                             {% csrf_token %}
@@ -111,7 +113,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="queries">How can we help you?</label>
-                                <h6>Please select from dropdown menu.</h6>
+                                <h4>Please select from dropdown menu.</h4>
                                 <select class="form-control" id="queries" name="queries">
                                     <option value="post_a_blog">Post A Blog</option>
                                     <option value="issue_with_profile">Issue With Profile</option>
