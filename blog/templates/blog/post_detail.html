@@ -35,7 +35,7 @@
    <div class="row">
     <div class="col-12">
       <strong class="text-secondary">
-        <i class="far fa-comments"></i> {{ comment_count }}
+        <i class="far fa-comments"></i> <span style="color: white;">{{ comment_count }}</span>
       </strong>
     </div>
     <div class="col-12">
@@ -89,7 +89,7 @@
             {{ comment_form | crispy }}
             {% csrf_token %}
             <button id="submitButton" type="submit"
-              class="btn btn-signup btn-lg">Submit</button>
+              class="btn btn-signup btn-lg custom-btn">Submit</button>
           </form>
           {% else %}
           <p>Log in to leave a comment</p>

@@ -41,7 +41,8 @@ footer {
 
 .card-title {
     color: white;
-    text-shadow: 4px 4px 4px black;
+    font-size: 3.5em;
+    text-shadow: 2px 2px 2px black;
 }
 
 .post-title {
@@ -79,8 +80,9 @@ footer {
     background-color: rgb(15, 115, 182);
     border-color: rgb(15, 115, 182);
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     border-radius: 35px;
+    
 }
 
 .custom-btn:hover {
@@ -88,3 +90,6 @@ footer {
     border-color: #4a90e2;
 }
 
+.fa-comments {
+    color: white;
+}
