@@ -38,4 +38,4 @@ The goal of the project is to allow users who are travelling to the Estepona reg
 
 In developing the page for Explore Estepona, I aimed for a unigueness beyond simple colors. Therefore, I opted to incorporate the image of Estepona Port, considering its charming significance within Estepona. 
 
-![Estepona Port](img/esteponaport.jpg)
+![Estepona Port](static/img/esteponaport.jpg/)
