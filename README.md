@@ -31,3 +31,11 @@ The goal of the project is to allow users who are travelling to the Estepona reg
 - As a Site User I can edit details on my profile.
 - As a Site User I can view current pings or ping a location on google maps for locations mentioned in a blog post.
 - As a Site User I can create, view, edit and delete my own blog posts. 
+
+## Design
+
+### Background Image 
+
+In developing the page for Explore Estepona, I aimed for a unigueness beyond simple colors. Therefore, I opted to incorporate the image of Estepona Port, considering its charming significance within Estepona. 
+
+![Estepona Port](img/esteponaport.jpg)
