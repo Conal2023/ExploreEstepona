@@ -39,3 +39,5 @@ The goal of the project is to allow users who are travelling to the Estepona reg
 In developing the page for Explore Estepona, I aimed for a unigueness beyond simple colors. Therefore, I opted to incorporate the image of Estepona Port, considering its charming significance within Estepona. 
 
 ![Estepona Port](static/img/esteponaport.jpg/)
+
+After realising that a plain colour background wouldn't suffice, I concluded that a simple heading wouldn't suffice either. Thus, I embarked on the task of creating a distinctive one. I turned to Google to discover a suitable website and proceeded to desgin a custom image for the heading.  [looka.com](https://looka.com/editor/175071137) (static/img/Logo.jpg)
