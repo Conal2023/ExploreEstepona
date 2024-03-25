@@ -117,3 +117,12 @@ footer {
     color: white;
     text-decoration: none;
 }
+
+footer {
+    background-color: rgba(15, 115, 182, 0.555);
+}
+
+.highlight {
+    background-color: rgba(15, 115, 182, 0.555);
+
+}
