@@ -34,6 +34,19 @@ The goal of the project is to allow users who are travelling to the Estepona reg
 
 ## Design
 
+### Wireframes
+
+<details>
+    <summary> Home </summary>
+
+    <br>
+
+    ![Home](docs/wireframes/home.jpg)
+
+</details>
+
+All wireframes were designed through [Balsamiq](https://balsamiq.com/)
+
 ### Background Image 
 
 In developing the page for Explore Estepona, I aimed for a unigueness beyond simple colors. Therefore, I opted to incorporate the image of Estepona Port, considering its charming significance within Estepona. 
