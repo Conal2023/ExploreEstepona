@@ -36,16 +36,72 @@ The goal of the project is to allow users who are travelling to the Estepona reg
 
 ### Wireframes
 
+All wireframes were designed through [Balsamiq](https://balsamiq.com/)
+
 <details>
-    <summary> Home </summary>
+  <summary>Home</summary>
 
-    <br>
+  <br>
 
-    ![Home](docs/wireframes/home.jpg)
+  ![Home](docs/wireframes/home.jpg)
 
 </details>
 
-All wireframes were designed through [Balsamiq](https://balsamiq.com/)
+<details>
+  <summary>Blog</summary>
+
+  <br>
+
+  ![Blog](docs/wireframes/blog.jpg)
+
+</details>
+
+<details>
+  <summary>Contact Us</summary>
+
+  <br>
+
+  ![Contact Us](docs/wireframes/contactus.jpg)
+
+</details>
+
+<details>
+  <summary>Contact Us Success</summary>
+
+  <br>
+
+  ![Contact Us Success](docs/wireframes/success.jpg)
+
+</details>
+
+<details>
+  <summary>Register</summary>
+
+  <br>
+
+  ![Register](docs/wireframes/register.jpg)
+
+</details>
+
+<details>
+  <summary>Register Success</summary>
+
+  <br>
+
+  ![Register Success](docs/wireframes/registersuccess.jpg)
+
+</details>
+
+<details>
+  <summary>Login</summary>
+
+  <br>
+
+  ![Login](docs/wireframes/login.jpg)
+
+</details>
+
+
 
 ### Background Image 
 
