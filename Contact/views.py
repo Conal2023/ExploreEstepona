@@ -3,6 +3,7 @@ from .models import Contact
 
 # Create your views here.
 def contact(request):
+    """ Model to structure the contact form"""
     if request.method == 'POST':
         name = request.POST.get('name')
         email = request.POST.get('email')

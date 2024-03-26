@@ -12,6 +12,7 @@ Select_question_categories = (
 )
 
 class Contact(models.Model):
+    """ Model to structure the contact form"""
     name = models.CharField(max_length=250)
     email = models.EmailField()
     phone = models.CharField(max_length=10)
